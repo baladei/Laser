@@ -6,23 +6,23 @@
     <link rel="stylesheet" href="styles/laser.css">
     <script src="https://kit.fontawesome.com/a853e3f33d.js" crossorigin="anonymous"></script></head>
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <header>
             <div class="nav-container">
                 <nav>
                     <a href="#"><img src="img/logo.png" alt="Aesthetic Beauting" class="logo"></a>
                     <ul class="nav-items">
                         <li>
-                            <a href="#">Home</a>
+                            <a href="#container">Home</a>
                         </li>
                         <li>
-                            <a href="#">Sobre</a>
+                            <a href="#about">Sobre</a>
                         </li>
                         <li>
-                            <a href="#">Dúvidas</a>
+                            <a href="#doubts">Dúvidas</a>
                         </li>
                         <li>
-                            <a href="#">Contato</a>
+                            <a href="#contact">Contato</a>
                         </li>
                         <li>
                             <a href="#" class="btn">Entrar</a>
@@ -39,7 +39,7 @@
                     Pagamento facilitado por sessão</p>
             </div>
             <section class="services">
-                <ul>
+                <ul class="about" id="about">
                     <li>
                         <i class="fa-solid fa-hand-holding-hand"></i>
                         <h3>Como funciona?</h3>
@@ -49,23 +49,31 @@
                         </p>
                     </li>
                     <li>
+                </ul>
+                <ul class="benefits">
+                    <span class="benefits-title">
                         <i class="fa-solid fa-heart"></i>
                         <h3>Benefícios</h3>
-                        <ul class="benefits">
-                            <li>Combate a foliculite e pelos encravado</li>
-                            <li>Pele lisa e macia sempre</li>
-                            <li>Não agride a pele</li>
-                            <li>Maior durabilidade</li>
-                            <li>Praticidade</li>
-                            <li>Resultado nas primeiras sessões</li>
+                    </span>
+                            <div class="benefits-list">
+                                <li>Combate a foliculite e pelos encravado</li>
+                                <li>Pele lisa e macia sempre</li>
+                                <li>Não agride a pele</li>
+                                <li>Maior durabilidade</li>
+                                <li>Praticidade</li>
+                                <li>Resultado nas primeiras sessões</li>    
+                            </div>
                         </ul>
                     </li>
-                    <li>
-                        <i class="fa-regular fa-thumbs-up"></i>
-                        <h3>Dúvidas Frequentes</h3>
-                        <h4>Posso fazer depilação a laser com a pele bronzeada?</h4>
-                        <p>Existem muitos tipos de laser no mercado da depilação a Laser, porém nem todas tecnologias atendem fototipos altos e pele bronzeada. A Somente tecnologias mais modernas e avançadas atendem a todos fototipos de pele na mesma máquina sem riscos de queimaduras. Nosso Laser não tem restrição de sol, atende todos o fototipos de pele, porém pedimos um intervalo de 3 dias antes e 3 depois das sessões e o uso de filtro solar para sua segurança e conforto.</p>
-                    </li>
+                            <ul class="doubts" id="doubts">
+                                <li>
+                                    <i class="fa-regular fa-thumbs-up"></i>
+                                    <h3>Dúvidas Frequentes</h3>
+                                    <h4>Posso fazer depilação a laser com a pele bronzeada?</h4>
+                                    <p>Existem muitos tipos de laser no mercado da depilação a Laser, porém nem todas tecnologias atendem fototipos altos e pele bronzeada. A Somente tecnologias mais modernas e avançadas atendem a todos fototipos de pele na mesma máquina sem riscos de queimaduras. Nosso Laser não tem restrição de sol, atende todos o fototipos de pele, porém pedimos um intervalo de 3 dias antes e 3 depois das sessões e o uso de filtro solar para sua segurança e conforto.</p>
+                                </li>        
+                            </ul>
+            </section>
                     <!-- <li>
                         <i class="fa-solid fa-hand-holding-heart"></i>
                     </li>
@@ -74,12 +82,21 @@
                     </li>
                     <li>
                         <i class="fa-solid fa-hand-holding-dollar"></i>
-                    </li>
-                    <li>
-                        <i class="fa-regular fa-comment"></i>
                     </li> -->
-                </ul>
-            </section>
+                    <section class="contact-container" id="contact">
+                        <i class="fa-regular fa-comment"></i>
+                        <h2>Mande uma mensagem!</h2>
+                        <p>Envie a sua mensagem, em até 4 horas um especialista entrará em contato</p>
+                        <form>
+                            <input type="text" name="name" id="name" placeholder="Seu nome">
+                            <input type="email" name="email" id="email" placeholder="Seu e-mail">
+                            <textarea name="message" id="message" placeholder="Digite aqui a sua mensagem"></textarea>
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </section>
+                    <footer>
+                        <p>Aesthetic Beauting @ 2023</p>
+                    </footer>
         </main>
     </div>
 </body>
